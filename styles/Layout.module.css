@@ -1,0 +1,159 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: -webkit-fill-available;
+  background: rgba(0, 0, 0, 0);
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.buttonsForPages {
+  display: flex;
+}
+
+.buttonLink {
+  position: relative;
+  margin: 10px;
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.buttonLink::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0); /* начальное состояние без границы */
+  transform-origin: right; /* установка начальной точки трансформации */
+  transition: transform 0.3s ease; /* плавный переход для границы */
+}
+
+.buttonLink:hover::before {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left; /* установка конечной точки трансформации */
+}
+
+.buttonsDiv {
+  display: flex;
+}
+
+.buttonLogin {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 30px;
+  width: 120px;
+  height: 40px;
+  border-style: solid;
+  border-color: #15384f;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.buttonLogin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  width: 101%;
+  height: 100%;
+  background: #15384f;
+  transform: scaleX(0); /* начальное состояние без границы */
+  transform-origin: right; /* установка начальной точки трансформации */
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.buttonLogin:hover::before {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+  border-radius: 20px;
+}
+.buttonLogin:hover {
+  color: white;
+}
+
+.buttonGet {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 30px;
+  width: 130px;
+  height: 45px;
+  background-color: #15384f;
+  cursor: pointer;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.buttonGet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  color: rgb(0, 0, 0);
+  z-index: -10;
+  width: 101%;
+  height: 100%;
+  background: #ffffff;
+  transform: scaleX(0); /* начальное состояние без границы */
+  transform-origin: right; /* установка начальной точки трансформации */
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+.buttonGet:hover::before {
+  color: rgb(0, 0, 0);
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+  border-radius: 20px;
+}
+
+.buttonGet:hover {
+  color: #000;
+  border-color: #ffffff;
+}
+
+.textButtonLogin {
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+}
+
+.textButtonGet {
+  font-size: 17px;
+
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+}
+
+.lineButtons {
+  background-color: black;
+  height: 4px;
+  width: 35px;
+  margin: 5px;
+  margin-right: 20px;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
