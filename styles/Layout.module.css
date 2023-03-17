@@ -38,7 +38,7 @@
   background-color: #000;
   transform: scaleX(0); /* начальное состояние без границы */
   transform-origin: right; /* установка начальной точки трансформации */
-  transition: transform 0.3s ease; /* плавный переход для границы */
+  transition: transform 0.5s ease; /* плавный переход для границы */
 }
 
 .buttonLink:hover::before {
@@ -77,7 +77,7 @@
   background: #15384f;
   transform: scaleX(0); /* начальное состояние без границы */
   transform-origin: right; /* установка начальной точки трансформации */
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   border-radius: 20px;
 }
 
