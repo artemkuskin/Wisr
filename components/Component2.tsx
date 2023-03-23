@@ -10,6 +10,7 @@ export const Component2 = () => {
           autoPlay
           muted
         ></video>
+        <div className={styles.contentComponent2}></div>
       </div>
     </div>
   );

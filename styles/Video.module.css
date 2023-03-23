@@ -32,6 +32,32 @@
   border-radius: 20px;
   margin-top: 25%;
   margin-right: 10%;
+  animation: slide-in 1s ease-out;
+}
+
+.contentComponent2 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: -25%;
+  margin-right: 10%;
+  animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .component {
   background-color: #7ac2bb;
