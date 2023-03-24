@@ -230,6 +230,17 @@
   margin-right: 10%;
 }
 
+.contentComponent6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 35%;
+  margin-top: 40%;
+  margin-right: 10%;
+}
+
 @keyframes slide-in {
   0% {
     opacity: 0;
