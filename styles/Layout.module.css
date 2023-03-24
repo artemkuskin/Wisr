@@ -20,11 +20,11 @@
 
 .buttonLink {
   position: relative;
-  margin: 10px;
-  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  margin: 20px;
   z-index: 10;
   cursor: pointer;
   font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .buttonLink::before {
@@ -134,14 +134,14 @@
 }
 
 .textButtonLogin {
-  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 17px;
 }
 
 .textButtonGet {
   font-size: 17px;
 
-  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .lineButtons {

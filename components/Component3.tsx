@@ -23,17 +23,17 @@ export const Component3 = () => {
         <div className={styles.contentComponent3}>
           <h2>
             <div className={styles.animComponent2} data-aos="fade-up" data-aos-once="true">
-              <div className={styles.component2Line}>PERSONAL</div>
-              <div className={styles.component2Line}>LOANS</div>
+              <div className={styles.componentLine}>PERSONAL</div>
+              <div className={styles.componentLine}>LOANS</div>
             </div>
             <div className={styles.animComponent2} data-aos="fade-up" data-aos-once="true">
-              <div className={styles.component2Line}>SHOULD</div>
-              <div className={styles.component2Line}>HAVE</div>
-              <div className={styles.component2Line}>A</div>
+              <div className={styles.componentLine}>SHOULD</div>
+              <div className={styles.componentLine}>HAVE</div>
+              <div className={styles.componentLine}>A</div>
             </div>
             <div className={styles.animComponent2} data-aos="fade-up" data-aos-once="true">
-              <div className={styles.component2Line}>PERSONAL</div>
-              <div className={styles.component2Line}>RATE</div>
+              <div className={styles.componentLine}>PERSONAL</div>
+              <div className={styles.componentLine}>RATE</div>
             </div>
           </h2>
           <div>
@@ -47,6 +47,10 @@ export const Component3 = () => {
               <div className={styles.component2Line}>credit</div>
               <div className={styles.component2Line}>score</div>
             </div>
+          </div>
+          <div className={styles.buttonComponent3} data-aos="fade-up" data-aos-once="true">
+            GET ESTIMATE
+            <div className={styles.whiteBoll}></div>
           </div>
         </div>
       </div>

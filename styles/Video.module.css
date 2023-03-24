@@ -58,6 +58,7 @@
   background: rgba(0, 0, 0, 0);
   color: #15384f;
   font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .component1Button::before {
@@ -116,6 +117,17 @@
   font-size: 32px;
   font-weight: 100;
   color: #15384f;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.componentLine {
+  display: inline;
+  position: relative;
+  margin: 5px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #15384f;
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
 }
 
 .component2Button {
@@ -127,15 +139,16 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  width: 140px;
-  height: 40px;
+  width: 35%;
+  height: 15%;
   color: white;
   cursor: pointer;
   z-index: 10;
-  font-size: 10px;
+  font-size: 80%;
   background: #15384f;
   border-style: none;
   font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .component2Button::before {
@@ -167,6 +180,42 @@
   width: 30%;
   height: 30%;
   margin-top: -25%;
+  margin-right: 60%;
+}
+
+.buttonComponent3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 20px;
+  width: 35%;
+  height: 15%;
+  background-color: #15384f;
+  border-radius: 30px;
+  font-size: 80%;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.whiteBoll {
+  background-color: white;
+  border-radius: 50%;
+  width: 7%;
+  height: 26%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonComponent3:hover .whiteBoll {
+  transform: scale(1.5);
+}
+
+.contentComponent4 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin-top: -15%;
   margin-right: 60%;
 }
 
@@ -222,14 +271,14 @@
 }
 
 .component1P {
-  font-family: ui-serif;
   font-size: 20px;
   font-weight: 100;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .component1Srong {
-  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   margin: 0;
 }

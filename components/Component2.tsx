@@ -25,13 +25,13 @@ export const Component2 = () => {
         <div className={styles.contentComponent2}>
           <h2>
             <div className={styles.animComponent2} data-aos="fade-up" data-aos-once="true">
-              <div className={styles.component2Line}>SMART</div>
-              <div className={styles.component2Line}>HABITS</div>
+              <div className={styles.componentLine}>SMART</div>
+              <div className={styles.componentLine}>HABITS</div>
             </div>
             <div className={styles.animComponent2} data-aos="fade-up" data-aos-once="true">
-              <div className={styles.component2Line}>HELP</div>
-              <div className={styles.component2Line}>YOU</div>
-              <div className={styles.component2Line}>SAVE</div>
+              <div className={styles.componentLine}>HELP</div>
+              <div className={styles.componentLine}>YOU</div>
+              <div className={styles.componentLine}>SAVE</div>
             </div>
           </h2>
           <div>
