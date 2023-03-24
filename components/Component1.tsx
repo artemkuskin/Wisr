@@ -11,7 +11,13 @@ export const Component1 = () => {
             autoPlay
             muted
           ></video>
-          <div className={styles.contentComponent1}></div>
+          <div className={styles.contentComponent1}>
+            <strong className={styles.component1Srong}>introduct Wisr Today</strong>
+            <p className={styles.component1P}>
+              Use the power of psychology to help you build smarter money habits and save
+            </p>
+            <button className={styles.component1Button}>Learn more</button>
+          </div>
         </div>
       </div>
     </div>

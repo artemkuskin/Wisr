@@ -25,14 +25,59 @@
 }
 
 .contentComponent1 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  justify-content: space-evenly;
   position: absolute;
-  width: 30%;
-  height: 30%;
-  border-style: solid;
+  width: 20%;
+  height: 20%;
+  border: 2px solid #15384f;
   border-radius: 20px;
   margin-top: 25%;
-  margin-right: 10%;
+  margin-right: 20%;
   animation: slide-in 1s ease-out;
+  color: #15384f;
+}
+.component1Button {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 120px;
+  height: 40px;
+  border-style: solid;
+  border-color: #15384f;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.component1Button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background: #15384f;
+  transform: scaleX(0); /* начальное состояние без границы */
+  transform-origin: right; /* установка начальной точки трансформации */
+  transition: transform 0.5s ease;
+  border-radius: 20px;
+}
+
+.component1Button:hover::before {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+  border-radius: 20px;
+}
+.component1Button:hover {
+  color: white;
 }
 
 .contentComponent2 {
@@ -46,7 +91,32 @@
   animation: slide-in 1s ease-out;
 }
 
+.contentComponent3 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: -25%;
+  margin-right: 60%;
+  animation: slide-in1 1s ease-out;
+}
+
 @keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in1 {
   0% {
     opacity: 0;
     transform: translateX(-100%);
@@ -59,6 +129,7 @@
     transform: translateX(0);
   }
 }
+
 .component {
   background-color: #7ac2bb;
   height: calc(100vh + 1px);
@@ -80,4 +151,17 @@
   padding-top: 66.66%;
   position: relative;
   width: 100%;
+}
+
+.component1P {
+  font-family: ui-serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.component1Srong {
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
 }

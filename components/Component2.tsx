@@ -1,4 +1,5 @@
 import styles from "@/styles/Video.module.css";
+
 export const Component2 = () => {
   return (
     <div className={styles.contantVideo}>
