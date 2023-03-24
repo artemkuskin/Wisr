@@ -113,7 +113,7 @@
 .component2Line {
   display: inline;
   position: relative;
-  margin: 3px;
+  margin: 7px;
   font-size: 32px;
   font-weight: 100;
   color: #15384f;
@@ -123,7 +123,7 @@
 .componentLine {
   display: inline;
   position: relative;
-  margin: 5px;
+  margin: 7px;
   font-size: 32px;
   font-weight: 600;
   color: #15384f;
@@ -217,6 +217,17 @@
   height: 30%;
   margin-top: -15%;
   margin-right: 60%;
+}
+
+.contentComponent5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin-top: -15%;
+  margin-right: 10%;
 }
 
 @keyframes slide-in {
