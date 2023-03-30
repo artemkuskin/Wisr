@@ -21,8 +21,10 @@
 }
 
 .textRight {
-  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
   font-weight: 100;
+  max-width: 7.5em;
+  font-size: 70px;
+  font-family: system-ui;
 }
 
 .card {

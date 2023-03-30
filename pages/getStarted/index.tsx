@@ -1,5 +1,4 @@
 import styles from "@/styles/GetStarted.module.css";
-import Aos from "aos";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 const getStarted = () => {
@@ -62,9 +61,9 @@ const getStarted = () => {
             <div className={styles.card5}>
               {" "}
               <div className={styles.cardContent}>
-                <div className={styles.cardText}>PERSONAL LOANS</div>
+                <div className={styles.cardText}>CREDIT SCORES</div>
                 <div className={styles.cardText2}>
-                  Get estimate{" "}
+                  Create Accout
                   <div className={styles.cardButton}>
                     <svg className={styles.svg} viewBox="0 0 5 8" fill="none">
                       <path d="M1 1L4 4L1 7" stroke="white"></path>
