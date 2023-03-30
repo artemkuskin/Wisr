@@ -19,6 +19,8 @@
 }
 
 .buttonLink {
+  color: #000;
+  text-decoration: none;
   position: relative;
   margin: 20px;
   z-index: 10;
@@ -86,7 +88,7 @@
   transform-origin: left;
   border-radius: 20px;
 }
-.buttonLogin:hover {
+.buttonLogin:hover .textButtonLogin {
   color: white;
 }
 
@@ -128,7 +130,7 @@
   border-radius: 20px;
 }
 
-.buttonGet:hover {
+.buttonGet:hover .textButtonGet {
   color: #000;
   border-color: #ffffff;
 }
@@ -136,11 +138,14 @@
 .textButtonLogin {
   font-family: "Courier New", Courier, monospace;
   font-size: 17px;
+  color: #000;
+  text-decoration: none;
 }
 
 .textButtonGet {
   font-size: 17px;
-
+  color: #ffffff;
+  text-decoration: none;
   font-family: "Courier New", Courier, monospace;
 }
 

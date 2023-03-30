@@ -1,0 +1,142 @@
+.contant {
+  display: flex;
+}
+
+.rightSide {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7ac2bb;
+  height: 100vh;
+  position: fixed;
+}
+
+.leftSide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: auto;
+}
+
+.textRight {
+  font-family: Basis Grotesque Pro, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+.card {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #f5de66;
+  margin: 10px;
+}
+
+.card2 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #d78f50;
+  margin: 10px;
+}
+.card3 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #e3b6ce;
+  margin: 10px;
+}
+.card4 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #b99d78;
+  margin: 10px;
+}
+.card5 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #7ac2bb;
+  margin: 10px;
+}
+.card6 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #d78f50;
+  margin: 10px;
+}
+.card7 {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #9eb964;
+  margin: 10px;
+}
+
+.block {
+  display: flex;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+.cards {
+  margin-top: 7em;
+  /* transform: translate3d(0px, 10%, 0px); */
+}
+
+@media only screen and (max-width: 1500px) {
+  .card {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #f5de66;
+    margin: 10px;
+  }
+
+  .card2 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #d78f50;
+    margin: 10px;
+  }
+  .card3 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #e3b6ce;
+    margin: 10px;
+  }
+  .card4 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #b99d78;
+    margin: 10px;
+  }
+  .card5 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #7ac2bb;
+    margin: 10px;
+  }
+  .card6 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #d78f50;
+    margin: 10px;
+  }
+  .card7 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #9eb964;
+    margin: 10px;
+  }
+}
