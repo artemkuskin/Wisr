@@ -18,7 +18,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  overflow: auto;
 }
 
 .textRight {
@@ -28,115 +27,309 @@
 
 .card {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #f5de66;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card2 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #d78f50;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
+
 .card3 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #e3b6ce;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .card4 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #b99d78;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .card5 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #7ac2bb;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .card6 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #d78f50;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .card7 {
   height: 450px;
+  padding: 10px;
+  cursor: pointer;
   width: 350px;
   border-radius: 20px;
   background-color: #9eb964;
-  margin: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
+.card2:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card3:hover {
+  transform: scale(1.05);
+}
+
+.card3:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card4:hover {
+  transform: scale(1.05);
+}
+
+.card4:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card5:hover {
+  transform: scale(1.05);
+}
+
+.card5:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card6:hover {
+  transform: scale(1.05);
+}
+
+.card6:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
+}
+
+.card7:hover {
+  transform: scale(1.05);
+}
+
+.card7:hover .svg {
+  transform: scaleX(1); /* добавление границы при наведении */
+  transform-origin: left;
 }
 
 .block {
   display: flex;
   margin-top: 10%;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .cards {
-  margin-top: 7em;
+  margin-top: 9em;
   /* transform: translate3d(0px, 10%, 0px); */
 }
 
+.svg {
+  height: auto;
+  width: 0.3rem;
+  transform: scaleX(0); /* начальное состояние без границы */
+  transform-origin: right; /* установка начальной точки трансформации */
+  transition: transform 0.3s ease;
+}
+
+.cardButton {
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  /* border-style: solid; */
+  border-style: none;
+  color: white;
+  background-color: #15384f;
+}
+
+.cardText {
+  max-width: 7.5em;
+  font-family: system-ui;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.cardText2 {
+  display: flex;
+  align-items: center;
+  font-family: system-ui;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.buttonComponent {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  width: 55%;
+  height: 11%;
+  background-color: #15384f;
+  border-radius: 30px;
+  font-size: 80%;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.containerButton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.whiteBoll {
+  background-color: white;
+  border-radius: 50%;
+  width: 7%;
+  height: 23%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonComponent:hover .whiteBoll {
+  transform: scale(1.5);
+}
+
 @media only screen and (max-width: 1500px) {
+  .buttonComponent {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    width: 55%;
+    height: 11%;
+    background-color: #15384f;
+    border-radius: 30px;
+    font-size: 80%;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+  }
+
   .card {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #f5de66;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
 
   .card2 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #d78f50;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
   .card3 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #e3b6ce;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
   .card4 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #b99d78;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
   .card5 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #7ac2bb;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
   .card6 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #d78f50;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
   .card7 {
     height: 350px;
+    padding: 10px;
+    cursor: pointer;
     width: 250px;
     border-radius: 20px;
     background-color: #9eb964;
-    margin: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
   }
 }
