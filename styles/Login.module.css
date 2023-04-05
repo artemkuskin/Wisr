@@ -180,7 +180,7 @@
 
 .buttonsRegister {
   display: flex;
-  animation: buttons-anim 1s ease-in-out;
+  animation: buttons-anim-regiser 1s ease-in-out;
 }
 
 .deleteButtonsRegister {
@@ -203,6 +203,20 @@
 .deleteButtons {
   opacity: 0;
   animation: title-anim 1s ease-in-out;
+}
+
+@keyframes buttons-anim-regiser {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes scale-button {
@@ -236,6 +250,9 @@
 
 @keyframes title-anim-register {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -308,7 +325,7 @@
   50% {
     width: 500px;
     height: 350px;
-    transform: translateX(100px);
+    transform: translateX(-200px);
   }
   100% {
     width: 500px;
