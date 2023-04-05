@@ -36,6 +36,7 @@
   background-color: #f5de66;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 
 .card2 {
@@ -47,6 +48,7 @@
   background-color: #d78f50;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 
 .card3 {
@@ -58,6 +60,7 @@
   background-color: #e3b6ce;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 .card4 {
   height: 450px;
@@ -68,6 +71,7 @@
   background-color: #b99d78;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 .card5 {
   height: 450px;
@@ -78,6 +82,7 @@
   background-color: #7ac2bb;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 .card6 {
   height: 450px;
@@ -88,6 +93,7 @@
   background-color: #d78f50;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 .card7 {
   height: 450px;
@@ -98,6 +104,7 @@
   background-color: #9eb964;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
+  animation: scale 1s ease-in-out;
 }
 
 .card:hover {
@@ -244,6 +251,15 @@
 
 .buttonComponent:hover .whiteBoll {
   transform: scale(1.5);
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @media only screen and (max-width: 1500px) {

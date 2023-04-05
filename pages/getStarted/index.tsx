@@ -5,11 +5,9 @@ const getStarted = () => {
   const [scrollTop, setScrollTop] = useState(0);
   useEffect(() => {
     const onScroll = () => {
-      setScrollTop(window.scrollY / 5);
+      setScrollTop(window.scrollY / 8);
     };
-
     window.addEventListener("scroll", onScroll);
-
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
@@ -20,7 +18,7 @@ const getStarted = () => {
         <h1 className={styles.textRight}>GET THAT SMART PART GOING</h1>
       </div>
       <div className={styles.leftSide}>
-        <div className={styles.block} data-aos="zoom-in" data-aos-once="true">
+        <div className={styles.block}>
           <div>
             <div className={styles.card}>
               <div className={styles.cardContent}>

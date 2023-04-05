@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.labels {
+  animation: scale-button 1s ease-in-out;
+}
+
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -174,6 +178,15 @@
   animation: title-anim-register 1s ease-in-out;
 }
 
+.buttonsRegister {
+  display: flex;
+  animation: buttons-anim 1s ease-in-out;
+}
+
+.deleteButtonsRegister {
+  display: none;
+}
+
 .deleteRegisterForm {
   display: flex;
   flex-direction: column;
@@ -190,6 +203,15 @@
 .deleteButtons {
   opacity: 0;
   animation: title-anim 1s ease-in-out;
+}
+
+@keyframes scale-button {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes buttons-anim {
